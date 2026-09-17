@@ -1,20 +1,21 @@
-import 'package:flutter/material.dart';
+name: alwadi_app
+description: "A new Flutter project."
+publish_to: 'none'
 
-void main() {
-  runApp(const MyApp());
-}
+version: 1.0.0+1
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+environment:
+  sdk: '>=3.0.0 <4.0.0'
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: const Text('تطبيق الوادي')),
-        body: const Center(child: Text('تطبيق إدارة الحضور والإنتاجية')),
-      ),
-    );
-  }
-}
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
 
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
